@@ -40,7 +40,7 @@ module.exports = function (context) {
     }
 
     var targetDir = path.join(projectRoot, "platforms", "android", "app","src","main","java", packageName.replace(/\./g, path.sep), "wxapi");
-    targetFiles = ["EntryActivity.java", "WXEntryActivity.java", "WXPayEntryActivity.java"];
+        targetFiles = ["EntryActivity.java", "WXEntryActivity.java", "WXPayEntryActivity.java"];
 
     if (['after_plugin_add', 'after_plugin_install'].indexOf(context.hook) === -1) {
         // remove it?
